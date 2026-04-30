@@ -40,7 +40,7 @@ export default function AdSpendPage() {
             <div className="px-(--space-20) py-(--space-12)">
               <div className="inline-flex shrink-0 items-center justify-center rounded-[15px] bg-(--color-grey-700) px-(--space-6) py-(--space-4)">
                 <span className="text-caption-2 font-medium leading-tight text-(--color-white) whitespace-nowrap">
-                  Vysta
+                  Vysta | tools.growwithvysta.com
                 </span>
               </div>
             </div>
