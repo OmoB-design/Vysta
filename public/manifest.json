@@ -1,6 +1,6 @@
 {
-  "name": "Ad-Lab Revenue Calculator",
-  "short_name": "Ad-Lab",
+  "name": "Vysta Revenue Calculator",
+  "short_name": "Vysta",
   "description": "Find out how much revenue your Google Ads is leaving on the table.",
   "start_url": "/",
   "display": "standalone",

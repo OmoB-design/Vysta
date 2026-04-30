@@ -20,13 +20,13 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "AdLab — Google Ads Revenue Calculator",
+  title: "Vysta — Google Ads Revenue Calculator",
   description: "Find out how much revenue your Google Ads is leaving on the table.",
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "Ad-Lab",
+    title: "Vysta",
   },
 };
 

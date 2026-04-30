@@ -13,7 +13,7 @@ npm run lint     # Run ESLint
 
 ## Architecture
 
-**AdLab Lead Generation** — a Next.js 16 full-stack app for AI-assisted lead generation with advertising integrations.
+**Vysta** — a Next.js 16 full-stack app for AI-assisted lead generation with advertising integrations.
 
 - **Framework:** Next.js App Router (React 19, TypeScript 5)
 - **Styling:** Tailwind CSS 4 via PostCSS (`@import "tailwindcss"` in globals.css)
@@ -32,13 +32,13 @@ npm run lint     # Run ESLint
 
 ### Design System
 
-All visual decisions are governed by `adlab-design.md` at the project root. The Figma design system is the **primary source of truth** — always read it via MCP before writing any component. If any value in `adlab-design.md` conflicts with Figma, **Figma wins**.
+All visual decisions are governed by `vysta-design.md` at the project root. The Figma design system is the **primary source of truth** — always read it via MCP before writing any component. If any value in `vysta-design.md` conflicts with Figma, **Figma wins**.
 
 Key rules:
 - **Never hardcode** a color, size, shadow, or radius — always use a CSS token from `globals.css @theme`
 - If a Figma value is not yet in `@theme`, add it there first before using it anywhere
 - Use **semantic tokens** in components (`--color-text-heading-04`, `--color-surface-stroke`, etc.), not raw base tokens
-- Component file map is fixed — see `adlab-design.md § 10`. Never rebuild Sidebar/Navbar inside a page file
+- Component file map is fixed — see `vysta-design.md § 10`. Never rebuild Sidebar/Navbar inside a page file
 - `layout.tsx` holds Sidebar + Navbar; individual `page.tsx` files render only their own content
 - Main content area offsets: `ml-[--sidebar-width]` + `pt-[--topnav-height]`
 - Card rest shadow: `--shadow-card`; hover: `--shadow-sm`. Focus rings: `--shadow-inset-focus` only
@@ -52,8 +52,8 @@ Full workflow is defined in `skill.md`. Summary:
 |---|---|
 | Figma URL | Read via MCP, build page (Stage 1) |
 | Built page needing refinement | Re-read Figma via MCP, iterate to 1:1 (Stage 2) |
-| Approved page | Generate/update `adlab-design.md` (Stage 3) |
-| `adlab-design.md` + IA flow | Build full app (Stage 4) |
+| Approved page | Generate/update `vysta-design.md` (Stage 3) |
+| `vysta-design.md` + IA flow | Build full app (Stage 4) |
 
 **Output defaults:**
 - `.tsx` components only — no `.html`, no inline styles, no `<style>` blocks

@@ -30,14 +30,14 @@ export function buildCalculatorInsightPrompt(
 ): string {
   const platformDesc = platformDescriptions[inputs.platform] ?? inputs.platform
 
-  return `You are a senior Google Ads consultant at Ad-Lab, a specialist Google & YouTube Ads agency for e-commerce brands.
+  return `You are a senior Google Ads consultant at Vysta, a specialist Google & YouTube Ads agency for e-commerce brands.
 
 A brand has just used our revenue calculator. Here is their situation:
 - Monthly ad spend: $${inputs.monthlySpend.toLocaleString()}
 - Current ROAS: ${inputs.currentRoas}x
 - Platform: ${platformDesc}
 - Their current monthly ad revenue: $${Math.round(results.currentRevenue).toLocaleString()}
-- What they could be making at Ad-Lab's 8.78x average: $${Math.round(results.projectedRevenue).toLocaleString()}
+- What they could be making at Vysta's 8.78x average: $${Math.round(results.projectedRevenue).toLocaleString()}
 - Monthly revenue gap: $${Math.round(results.monthlyGap).toLocaleString()}
 
 Write exactly 2–3 sentences of personalised insight. Rules:

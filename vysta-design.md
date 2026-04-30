@@ -1,4 +1,4 @@
-# AdLab Lead Generation — Design Reference
+# Vysta — Design Reference
 
 > Single source of truth for visual decisions. All values map directly to `globals.css @theme`.
 > Never hardcode a color, size, or shadow — reference the token instead.
@@ -23,7 +23,7 @@ to every build and iteration session:
 
 ## 1. Brand Personality
 
-AdLab Lead Generation is a professional AI-powered lead generation tool. The visual language reflects:
+Vysta is a professional AI-powered lead generation tool. The visual language reflects:
 
 - **Trustworthy and calm** — an almost-white surface palette keeps the UI quiet so data reads clearly
 - **Decisive and action-oriented** — one strong blue drives all primary actions; nothing competes with it

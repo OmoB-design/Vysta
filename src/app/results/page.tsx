@@ -181,7 +181,7 @@ function ResultsContent() {
     dim:      true,
   }
 
-  const bookingUrl = process.env.NEXT_PUBLIC_BOOKING_URL ?? 'https://www.ad-lab.io/#book'
+  const bookingUrl = process.env.NEXT_PUBLIC_BOOKING_URL ?? 'https://calendly.com/d/cm28-g34-5xf/google-and-youtube-ads-audit-with-vysta'
 
   return (
     <div className="flex flex-col md:flex-row h-screen w-full overflow-hidden bg-(--color-surface-fg-01)">
@@ -197,7 +197,7 @@ function ResultsContent() {
           <div className="px-(--space-0) py-(--space-12)">
             <div className="inline-flex shrink-0 items-center justify-center rounded-[15px] bg-(--color-grey-700) px-(--space-6) py-(--space-4)">
               <span className="text-caption-2 font-medium leading-tight text-(--color-white) whitespace-nowrap">
-                Ad-Lab | tools.ad-lab.io
+                Vysta
               </span>
             </div>
           </div>
@@ -264,7 +264,7 @@ function ResultsContent() {
               </motion.div>
             </div>
 
-            {/* RIGHT COLUMN — Where Ad-Lab clients are */}
+            {/* RIGHT COLUMN — Where Vysta clients are */}
             <div
               style={isMobile ? undefined : { width: `${100 - leftPct}%` }}
               className="relative flex flex-col gap-(--space-18) rounded-b-(--radius-4xl) md:rounded-b-none md:rounded-tr-(--radius-4xl) md:rounded-br-(--radius-4xl) border-[0.5px] border-(--color-surface-stroke) px-(--space-20) py-(--space-20) md:pl-(--space-40) md:pr-(--space-20)"
@@ -281,7 +281,7 @@ function ResultsContent() {
                 className="relative flex flex-col gap-(--space-16) pb-(--space-24)"
               >
                 <p className="font-sans text-caption-1 font-medium leading-body text-(--color-text-heading-06)">
-                  Where Ad-Lab clients like you are
+                  Where Vysta clients like you are
                 </p>
                 <p className="font-display text-h4 font-medium leading-tight text-(--color-text-heading-01)">
                   <AnimatedNumber
@@ -334,7 +334,7 @@ function ResultsContent() {
                   <div className="px-(--space-10) py-(--space-8)">
                     <div className="inline-flex items-center rounded-[15px] bg-(--color-grey-700) px-(--space-6) py-(--space-4)">
                       <span className="text-caption-3 font-medium leading-tight text-(--color-white) whitespace-nowrap">
-                        Ad-Lab | Insights
+                        Vysta | Insights
                       </span>
                     </div>
                   </div>
@@ -355,7 +355,7 @@ function ResultsContent() {
                           <p className="font-sans text-caption-2 font-normal leading-tight text-(--color-text-body)">
                             At {roasRaw}x ROAS, you&apos;re leaving{' '}
                             <strong>${fmtRaw(results.monthlyGap)}</strong> on the table every month.
-                            Ad-Lab clients at your spend level consistently reach 8.78x within 90 days.
+                            Vysta clients at your spend level consistently reach 8.78x within 90 days.
                             That gap is fixable.
                           </p>
                         ) : (

@@ -52,11 +52,30 @@ function StepCheckIcon() {
   )
 }
 
+function VystaLogo({ small = false }: { small?: boolean }) {
+  return (
+    <div className="flex flex-col leading-none">
+      <span
+        className="font-sans leading-none tracking-tight text-(--color-text-heading-01)"
+        style={{ fontWeight: 900, fontSize: small ? 16 : 20 }}
+      >
+        vysta
+      </span>
+      <span
+        className="font-sans font-bold leading-none text-(--color-text-heading-01) self-end"
+        style={{ fontSize: small ? 4.5 : 5.5, letterSpacing: '0.18em' }}
+      >
+        PAID MEDIA GROUP
+      </span>
+    </div>
+  )
+}
+
 function BlueBadge({ size = 16 }: { size?: number }) {
   return (
     <svg width={size} height={size} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-none">
       <g clipPath="url(#lp-badge)">
-        <path d="M15.1111 8C15.1111 7.02489 14.6062 6.12089 13.8089 5.59377C14 4.65689 13.7174 3.66044 13.0285 2.97155C12.3396 2.28266 11.3422 2 10.4062 2.19111C9.87825 1.39377 8.97514 0.888885 8.00003 0.888885C7.02492 0.888885 6.12092 1.39377 5.59381 2.19111C4.65425 1.99733 3.66047 2.28266 2.97158 2.97155C2.2818 3.66133 2.00003 4.65689 2.19114 5.59377C1.3938 6.12089 0.888916 7.024 0.888916 8C0.888916 8.976 1.3938 9.87822 2.19114 10.4062C2.00003 11.3431 2.2818 12.3387 2.97158 13.0284C3.66047 13.7182 4.65603 13.9991 5.59381 13.8089C6.12092 14.6062 7.02403 15.1111 8.00003 15.1111C8.97603 15.1111 9.87825 14.6062 10.4062 13.8089C11.3405 14 12.3387 13.7173 13.0285 13.0284C13.7182 12.3396 14 11.3431 13.8089 10.4062C14.6062 9.87911 15.1111 8.97511 15.1111 8ZM11.416 5.96266L7.63825 10.8516C7.51736 11.008 7.33336 11.1031 7.13603 11.1102C7.12714 11.1102 7.11914 11.1102 7.11114 11.1102C6.92269 11.1102 6.74225 11.0302 6.61514 10.8898L4.61514 8.66755C4.36892 8.39377 4.39114 7.97244 4.66492 7.72533C4.93958 7.48 5.36003 7.50133 5.60714 7.77511L7.07203 9.40355L10.3618 5.14666C10.5867 4.85511 11.0062 4.80177 11.2969 5.02666C11.5885 5.25155 11.6418 5.67022 11.4169 5.96177L11.416 5.96266Z" fill="#CA5DEC"/>
+        <path d="M15.1111 8C15.1111 7.02489 14.6062 6.12089 13.8089 5.59377C14 4.65689 13.7174 3.66044 13.0285 2.97155C12.3396 2.28266 11.3422 2 10.4062 2.19111C9.87825 1.39377 8.97514 0.888885 8.00003 0.888885C7.02492 0.888885 6.12092 1.39377 5.59381 2.19111C4.65425 1.99733 3.66047 2.28266 2.97158 2.97155C2.2818 3.66133 2.00003 4.65689 2.19114 5.59377C1.3938 6.12089 0.888916 7.024 0.888916 8C0.888916 8.976 1.3938 9.87822 2.19114 10.4062C2.00003 11.3431 2.2818 12.3387 2.97158 13.0284C3.66047 13.7182 4.65603 13.9991 5.59381 13.8089C6.12092 14.6062 7.02403 15.1111 8.00003 15.1111C8.97603 15.1111 9.87825 14.6062 10.4062 13.8089C11.3405 14 12.3387 13.7173 13.0285 13.0284C13.7182 12.3396 14 11.3431 13.8089 10.4062C14.6062 9.87911 15.1111 8.97511 15.1111 8ZM11.416 5.96266L7.63825 10.8516C7.51736 11.008 7.33336 11.1031 7.13603 11.1102C7.12714 11.1102 7.11914 11.1102 7.11114 11.1102C6.92269 11.1102 6.74225 11.0302 6.61514 10.8898L4.61514 8.66755C4.36892 8.39377 4.39114 7.97244 4.66492 7.72533C4.93958 7.48 5.36003 7.50133 5.60714 7.77511L7.07203 9.40355L10.3618 5.14666C10.5867 4.85511 11.0062 4.80177 11.2969 5.02666C11.5885 5.25155 11.6418 5.67022 11.4169 5.96177L11.416 5.96266Z" fill="#00a1ea"/>
       </g>
       <defs>
         <clipPath id="lp-badge">
@@ -88,8 +107,7 @@ export default function LeftPanel({ currentView, summary }: LeftPanelProps) {
       {/* ── Mobile top bar (hidden on md+) ──────────────────────────── */}
       <header className="flex md:hidden flex-none items-center justify-between border-b border-(--color-surface-stroke) bg-(--color-surface-fg-01) px-5 py-4">
         <div className="flex items-center gap-1">
-          <img src="/logo.png" alt="" className="h-[1em] w-[1em] object-contain" style={{ fontSize: 'inherit' }} />
-          <p className="font-sans text-caption-1 font-medium leading-tight text-(--color-text-body)">Ad-Lab</p>
+          <VystaLogo small />
         </div>
 
         {/* Step progress bars */}
@@ -99,7 +117,7 @@ export default function LeftPanel({ currentView, summary }: LeftPanelProps) {
               <div
                 key={i}
                 className={`h-[3px] w-8 rounded-full transition-colors duration-150 ${
-                  i <= mobileStep ? 'bg-(--color-purple-400)' : 'bg-(--color-surface-stroke)'
+                  i <= mobileStep ? 'bg-(--color-blue-500)' : 'bg-(--color-surface-stroke)'
                 }`}
               />
             ))}
@@ -121,8 +139,7 @@ export default function LeftPanel({ currentView, summary }: LeftPanelProps) {
 
           {/* Brand */}
           <div className="flex items-center gap-1">
-            <img src="/logo.png" alt="" className="h-[1em] w-[1em] object-contain" style={{ fontSize: '19px' }} />
-            <p className="font-sans text-h6 font-medium leading-tight text-(--color-text-body)">Ad-Lab</p>
+            <VystaLogo />
           </div>
 
           {/* Headline */}
@@ -237,7 +254,7 @@ export default function LeftPanel({ currentView, summary }: LeftPanelProps) {
             <a href="#" className="underline decoration-solid">Terms and Conditions.</a>
           </p>
           <div className="flex gap-(--space-32) text-caption-2 font-normal leading-tight text-(--color-text-heading-06)">
-            <span>2026 Ad-Lab</span>
+            <span>2026 Vysta</span>
             <a href="#" className="underline decoration-solid">Privacy Policy</a>
             <a href="#" className="underline decoration-solid">Support</a>
           </div>
