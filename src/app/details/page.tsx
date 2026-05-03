@@ -75,10 +75,10 @@ function DetailsContent() {
       <LeftPanel currentView="summary" summary={summary} />
 
       {/* Right panel */}
-      <main className="relative flex flex-1 flex-col overflow-hidden md:rounded-bl-(--radius-6xl) md:rounded-tl-(--radius-6xl) border border-(--color-surface-stroke) bg-(--color-surface-primary) shadow-(--shadow-panel)">
+      <main className="relative flex flex-1 flex-col md:items-center overflow-hidden md:rounded-bl-(--radius-6xl) md:rounded-tl-(--radius-6xl) border border-(--color-surface-stroke) bg-(--color-surface-primary) shadow-(--shadow-panel)">
 
         {/* Scrollable content area */}
-        <div className="flex flex-1 flex-col gap-(--space-20) overflow-y-auto px-5 pt-8 pb-8 md:px-(--space-120) md:pt-(--space-120) md:pb-(--space-64) md:max-w-[670px]">
+        <div className="flex flex-1 flex-col gap-(--space-20) overflow-y-auto px-5 pt-8 pb-8 md:px-(--space-120) md:pt-(--space-120) md:pb-(--space-64) md:w-full md:max-w-[820px]">
 
           {/* Notification tag */}
           <div className="px-(--space-0) py-(--space-12)">
