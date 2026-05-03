@@ -32,7 +32,7 @@ function RoasContent() {
       <main className="relative flex flex-1 flex-col md:items-center overflow-hidden md:rounded-bl-(--radius-6xl) md:rounded-tl-(--radius-6xl) border border-(--color-surface-stroke) bg-(--color-surface-primary) shadow-(--shadow-panel)">
 
         {/* Scrollable content area */}
-        <div className="flex flex-1 flex-col gap-(--space-50) overflow-y-auto px-5 pt-8 pb-8 md:px-(--space-120) md:pt-(--space-120) md:pb-(--space-64) md:w-full md:max-w-[820px]">
+        <div className="flex flex-1 flex-col gap-(--space-50) overflow-y-auto px-5 pt-8 pb-8 md:px-(--space-120) md:pt-(--space-120) md:pb-(--space-64) md:w-full md:max-w-[940px]">
 
           {/* Notification card — delay 0 */}
           <div
