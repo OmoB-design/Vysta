@@ -117,7 +117,7 @@ function DetailsContent() {
                     >
                       Full name
                     </label>
-                    <div className="flex w-full items-center overflow-hidden rounded-(--radius-xl) border border-(--color-surface-stroke) bg-(--color-surface-primary) px-[14px] py-(--space-14) shadow-(--shadow-input) transition-[border-color,box-shadow] duration-150 ease-in-out focus-within:border-(--color-blue-500) focus-within:shadow-[0px_0px_0px_2px_rgba(0,161,234,0.15)]">
+                    <div className="flex w-full items-center overflow-hidden rounded-(--radius-xl) border border-(--color-surface-stroke) bg-(--color-surface-primary) px-[14px] py-(--space-14) shadow-(--shadow-input) transition-[border-color,box-shadow] duration-150 ease-in-out focus-within:border-(--color-blue-500) focus-within:shadow-[0px_0px_0px_2px_rgba(16,80,224,0.15)]">
                       <input
                         id="fullName"
                         type="text"
@@ -137,7 +137,7 @@ function DetailsContent() {
                     >
                       Email address
                     </label>
-                    <div className="flex w-full items-center overflow-hidden rounded-(--radius-xl) border border-(--color-surface-stroke) bg-(--color-surface-primary) px-[14px] py-(--space-14) shadow-(--shadow-input) transition-[border-color,box-shadow] duration-150 ease-in-out focus-within:border-(--color-blue-500) focus-within:shadow-[0px_0px_0px_2px_rgba(0,161,234,0.15)]">
+                    <div className="flex w-full items-center overflow-hidden rounded-(--radius-xl) border border-(--color-surface-stroke) bg-(--color-surface-primary) px-[14px] py-(--space-14) shadow-(--shadow-input) transition-[border-color,box-shadow] duration-150 ease-in-out focus-within:border-(--color-blue-500) focus-within:shadow-[0px_0px_0px_2px_rgba(16,80,224,0.15)]">
                       <input
                         id="email"
                         type="email"

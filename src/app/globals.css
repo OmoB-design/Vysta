@@ -17,14 +17,14 @@
   --color-grey-700:       #3c3c3c;
   --color-grey-850:       #262626;
   --color-grey-950:       #101010;
-  --color-blue-100:       #d0eefa;
-  --color-blue-150:       #b3e5f8;
-  --color-blue-400:       #0091d3;
-  --color-blue-500:       #00a1ea;
+  --color-blue-100:       #dbe4fc;
+  --color-blue-150:       #bfd0fa;
+  --color-blue-400:       #0c41c2;
+  --color-blue-500:       #1050e0;
   --color-yellow-100:     #fcebd5;
   --color-yellow-500:     #ee9c2e;
   --color-purple-100:     #e1def5;
-  --color-purple-400:     #00a1ea;
+  --color-purple-400:     #1050e0;
   --color-purple-500:     #6a59ce;
   --color-red-100:        #ffd3d3;
   --color-red-400:        #ff5150;
@@ -46,10 +46,10 @@
   --color-icon-explainer:         #777777;
   --color-icon-button-primary:    #ffffff;
   --color-icon-button-secondary:  #212121;
-  --color-btn-primary-bg:         #00a1ea;
+  --color-btn-primary-bg:         #1050e0;
   --color-btn-primary-text:       #ffffff;
   --color-btn-dark-bg:            #171717;
-  --color-spot-blue:              #00a1ea;
+  --color-spot-blue:              #1050e0;
 
   /* Typography */
   --font-sans:        var(--font-geist-sans), sans-serif;
@@ -116,7 +116,7 @@
   --shadow-lg:          0px 6px 14px 0px rgba(135, 133, 133, 0.12);
   --shadow-inset-sm:    inset 0px 1.5px 2px 0px rgba(0, 0, 0, 0.08);
   --shadow-inset-light: inset 0px 1.5px 2px 0px #ffffff;
-  --shadow-inset-focus: inset 0px 0px 4px 0px #00a1ea;
+  --shadow-inset-focus: inset 0px 0px 4px 0px #1050e0;
   --shadow-inset-inner: inset 0px -2px 1px 0px rgba(244, 244, 244, 0.4);
   --shadow-panel:       -3px 0px 16.5px 0px rgba(194, 194, 194, 0.25);
   --shadow-surface:     0px 1px 2px 0px rgba(16, 24, 40, 0.05);
