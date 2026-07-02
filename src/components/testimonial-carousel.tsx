@@ -5,21 +5,21 @@ import { motion } from 'framer-motion'
 
 const testimonials = [
   {
-    name: 'Nate Schneider',
+    name: 'Jem Bourouh',
     role: 'Founder, Adcubator',
     company: 'Adcubator',
     quote: "$300,000 in ad spend on 1 account — $1,700,000 in revenue back. Not even Black Friday. We were surf scaling intraday with over 100 campaigns running simultaneously.",
     avatar: '/avatars/founder.jpg',
   },
   {
-    name: 'Nate Schneider',
+    name: 'Jem Bourouh',
     role: 'Founder, Adcubator',
     company: 'Adcubator',
     quote: "From $6k/day in spend to $53k/day in spend in 18 days. Going from $500k/month in revenue from Google to over $3M/month. Almost all YouTube Ads.",
     avatar: '/avatars/founder.jpg',
   },
   {
-    name: 'Nate Schneider',
+    name: 'Jem Bourouh',
     role: 'Founder, Adcubator',
     company: 'Adcubator',
     quote: "$0 → $4,500,000/month on Google Ads in ONE MONTH. Generating 50%+ of all sales on terms as broad as 'christmas gifts'. No one else is doing this.",
