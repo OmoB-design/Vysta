@@ -1,7 +1,6 @@
 'use client'
 
 import { Suspense, useState } from 'react'
-import { TrendingUp } from 'lucide-react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import LeftPanel from '@/components/left-panel'
 
@@ -113,7 +112,6 @@ function RoasContent() {
                   className="animate-fade-in-up flex w-full items-center gap-(--space-8) rounded-(--radius-xl) border border-(--color-surface-stroke) bg-(--color-surface-primary) px-[14px] py-(--space-14) shadow-(--shadow-input) transition-[border-color,box-shadow] duration-150 ease-in-out focus-within:border-(--color-blue-500) focus-within:shadow-[0px_0px_0px_2px_rgba(16,80,224,0.15)]"
                   style={{ animationDelay: '0.45s' }}
                 >
-                  <TrendingUp size={14} className="flex-none text-(--color-grey-400)" />
                   <input
                     type="text"
                     value={roas}
