@@ -372,6 +372,13 @@ function ResultsContent() {
                   transition={{ delay: 1.15, duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
                   className="flex flex-col gap-(--space-12)"
                 >
+                  <div
+                    className="relative block w-full overflow-hidden rounded-(--radius-lg) border-[0.8px] border-(--color-white) px-(--space-12) py-(--space-12) text-center text-caption-1 font-medium leading-tight text-(--color-btn-primary-text) shadow-(--shadow-soft)"
+                  >
+                    <div className="pointer-events-none absolute inset-0 rounded-[inherit] bg-(--color-btn-primary-bg)" />
+                    <span className="relative">🗓 Book a call — 2/9 spots left</span>
+                    <div className="pointer-events-none absolute inset-0 rounded-[inherit] shadow-[inset_0px_1.5px_2px_0px_rgba(0,0,0,0.08)]" />
+                  </div>
                   <a
                     href="/grader"
                     className="block w-full rounded-(--radius-lg) bg-(--color-btn-dark-bg) px-(--space-12) py-(--space-12) text-center text-caption-2 font-medium leading-tight text-(--color-white) shadow-(--shadow-soft) transition-opacity duration-150 hover:opacity-85 active:opacity-75"
