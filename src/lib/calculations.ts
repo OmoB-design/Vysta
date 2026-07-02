@@ -2,7 +2,7 @@
 // Revenue Calculator — Math Engine
 // =============================================================================
 //
-// Core logic: compares a brand's current ROAS against Vysta's 8.78x benchmark
+// Core logic: compares a brand's current ROAS against Adcubator's 8.78x benchmark
 // and calculates how much revenue they're leaving on the table each month.
 //
 // All currency values are in the same unit as monthlySpend (GBP by default).
@@ -10,15 +10,15 @@
 
 import type { CalculatorInputs, CalculatorResults } from '@/types/calculator'
 
-/** Vysta's proprietary benchmark ROAS — the average achieved for their clients */
-export const VYSTA_BENCHMARK_ROAS = 8.78
+/** Adcubator's proprietary benchmark ROAS — the average achieved for their clients */
+export const ADCUBATOR_BENCHMARK_ROAS = 8.78
 
 /**
  * Run the core revenue gap calculation.
  *
  * Formula:
  *   currentRevenue  = monthlySpend × currentRoas
- *   projectedRevenue = monthlySpend × VYSTA_BENCHMARK_ROAS
+ *   projectedRevenue = monthlySpend × ADCUBATOR_BENCHMARK_ROAS
  *   monthlyGap      = projectedRevenue − currentRevenue  (clamped to 0 if already above benchmark)
  *   annualGap       = monthlyGap × 12
  *
@@ -29,7 +29,7 @@ export function calculateRevenue(inputs: CalculatorInputs): CalculatorResults {
   const { monthlySpend, currentRoas } = inputs
 
   const currentRevenue = monthlySpend * currentRoas
-  const projectedRevenue = monthlySpend * VYSTA_BENCHMARK_ROAS
+  const projectedRevenue = monthlySpend * ADCUBATOR_BENCHMARK_ROAS
 
   // If the brand already beats the benchmark, gap is 0 (don't show negative numbers)
   const monthlyGap = Math.max(0, projectedRevenue - currentRevenue)
@@ -50,8 +50,8 @@ export function calculateRevenue(inputs: CalculatorInputs): CalculatorResults {
  * @example roasGapPercent(3.2) → 63.6 (i.e. 63.6% below 8.78x)
  */
 export function roasGapPercent(currentRoas: number): number {
-  if (currentRoas >= VYSTA_BENCHMARK_ROAS) return 0
-  return ((VYSTA_BENCHMARK_ROAS - currentRoas) / VYSTA_BENCHMARK_ROAS) * 100
+  if (currentRoas >= ADCUBATOR_BENCHMARK_ROAS) return 0
+  return ((ADCUBATOR_BENCHMARK_ROAS - currentRoas) / ADCUBATOR_BENCHMARK_ROAS) * 100
 }
 
 /**
@@ -62,7 +62,7 @@ export function roasTier(currentRoas: number): 'critical' | 'below' | 'average' 
   if (currentRoas < 2) return 'critical'
   if (currentRoas < 4) return 'below'
   if (currentRoas < 6) return 'average'
-  if (currentRoas < VYSTA_BENCHMARK_ROAS) return 'good'
+  if (currentRoas < ADCUBATOR_BENCHMARK_ROAS) return 'good'
   return 'excellent'
 }
 

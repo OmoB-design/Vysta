@@ -1,6 +1,6 @@
 {
-  "name": "Vysta Revenue Calculator",
-  "short_name": "Vysta",
+  "name": "Adcubator Revenue Calculator",
+  "short_name": "Adcubator",
   "description": "Find out how much revenue your Google Ads is leaving on the table.",
   "start_url": "/",
   "display": "standalone",

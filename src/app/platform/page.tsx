@@ -59,7 +59,7 @@ function PlatformContent() {
             <div className="px-(--space-20) py-(--space-12)">
               <div className="inline-flex shrink-0 items-center justify-center rounded-[15px] bg-(--color-grey-700) px-(--space-6) py-(--space-4)">
                 <span className="text-caption-2 font-medium leading-tight text-(--color-white) whitespace-nowrap">
-                  Vysta | tools.growwithvysta.com
+                  Adcubator | adcubator.com
                 </span>
               </div>
             </div>
@@ -77,7 +77,7 @@ function PlatformContent() {
               </svg>
               <p className="text-caption-2 font-medium leading-tight whitespace-nowrap">
                 <span className="text-(--color-text-heading-06)">Industry avg on Google for e-commerce: 4–6x&nbsp;&nbsp;·&nbsp;&nbsp;</span>
-                <span className="text-(--color-text-heading-01) font-medium">Vysta client average: 8.78x</span>
+                <span className="text-(--color-text-heading-01) font-medium">Adcubator client average: 8.78x</span>
               </p>
               <div className="pointer-events-none absolute inset-0 rounded-[inherit] shadow-[inset_0px_2.59px_2.59px_0px_rgba(246,246,246,0.25)]" />
             </div>

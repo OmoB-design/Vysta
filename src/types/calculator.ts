@@ -19,7 +19,7 @@ export interface CalculatorInputs {
 export interface CalculatorResults {
   /** Revenue the brand currently generates from ads */
   currentRevenue: number;
-  /** Revenue they'd generate at Vysta's 8.78x benchmark ROAS */
+  /** Revenue they'd generate at Adcubator's 8.78x benchmark ROAS */
   projectedRevenue: number;
   /** Monthly difference between projected and current revenue */
   monthlyGap: number;

@@ -46,8 +46,8 @@ export async function POST(req: NextRequest) {
       const gap = Math.round(mathResults.monthlyGap).toLocaleString()
       aiInsight =
         inputs.platform === 'meta'
-          ? `Running Meta-only at ${inputs.currentRoas}x ROAS means you're completely absent from Google — the channel where high-intent buyers actively search for what you sell. At your spend level, Vysta clients typically reach 8.78x on Google within 90 days. That $${gap}/month gap is there to be closed.`
-          : `At ${inputs.currentRoas}x ROAS you're generating solid volume, but at Vysta's 8.78x benchmark that same budget produces $${gap} more every single month. The delta between where you are and where your competitors are operating is the opportunity. It's fixable with the right strategy.`
+          ? `Running Meta-only at ${inputs.currentRoas}x ROAS means you're completely absent from Google — the channel where high-intent buyers actively search for what you sell. At your spend level, Adcubator clients typically reach 8.78x on Google within 90 days. That $${gap}/month gap is there to be closed.`
+          : `At ${inputs.currentRoas}x ROAS you're generating solid volume, but at Adcubator's 8.78x benchmark that same budget produces $${gap} more every single month. The delta between where you are and where your competitors are operating is the opportunity. It's fixable with the right strategy.`
     }
 
     return NextResponse.json({

@@ -3,6 +3,7 @@
 import { Fragment } from 'react'
 import { Circle } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const steps = [
   { title: 'Ad spend',  desc: 'Tell us how much you spend on ads',  href: '/ad-spend' },
@@ -52,20 +53,22 @@ function StepCheckIcon() {
   )
 }
 
-function VystaLogo({ small = false }: { small?: boolean }) {
+function AdcubatorLogo({ small = false }: { small?: boolean }) {
+  const size = small ? 22 : 28
   return (
-    <div className="flex flex-col leading-none">
+    <div className="flex items-center gap-2 leading-none">
+      <Image
+        src="/adcubator-logo.jpg"
+        alt="Adcubator logo"
+        width={size}
+        height={size}
+        className="rounded-md flex-none"
+      />
       <span
         className="font-sans leading-none tracking-tight text-(--color-text-heading-01)"
         style={{ fontWeight: 900, fontSize: small ? 16 : 20 }}
       >
-        vysta
-      </span>
-      <span
-        className="font-sans font-bold leading-none text-(--color-text-heading-01) self-end"
-        style={{ fontSize: small ? 4.5 : 5.5, letterSpacing: '0.18em' }}
-      >
-        PAID MEDIA GROUP
+        adcubator
       </span>
     </div>
   )
@@ -107,7 +110,7 @@ export default function LeftPanel({ currentView, summary }: LeftPanelProps) {
       {/* ── Mobile top bar (hidden on md+) ──────────────────────────── */}
       <header className="flex md:hidden flex-none items-center justify-between border-b border-(--color-surface-stroke) bg-(--color-surface-fg-01) px-5 py-4">
         <div className="flex items-center gap-1">
-          <VystaLogo small />
+          <AdcubatorLogo small />
         </div>
 
         {/* Step progress bars */}
@@ -139,7 +142,7 @@ export default function LeftPanel({ currentView, summary }: LeftPanelProps) {
 
           {/* Brand */}
           <div className="flex items-center gap-1">
-            <VystaLogo />
+            <AdcubatorLogo />
           </div>
 
           {/* Headline */}
@@ -254,7 +257,7 @@ export default function LeftPanel({ currentView, summary }: LeftPanelProps) {
             <a href="#" className="underline decoration-solid">Terms and Conditions.</a>
           </p>
           <div className="flex gap-(--space-32) text-caption-2 font-normal leading-tight text-(--color-text-heading-06)">
-            <span>2026 Vysta</span>
+            <span>2026 Adcubator</span>
             <a href="#" className="underline decoration-solid">Privacy Policy</a>
             <a href="#" className="underline decoration-solid">Support</a>
           </div>

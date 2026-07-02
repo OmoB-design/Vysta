@@ -84,7 +84,7 @@ function DetailsContent() {
           <div className="px-(--space-0) py-(--space-12)">
             <div className="inline-flex shrink-0 items-center justify-center rounded-[15px] bg-(--color-grey-700) px-(--space-6) py-(--space-4)">
               <span className="text-caption-2 font-medium leading-tight text-(--color-white) whitespace-nowrap">
-                Vysta | tools.growwithvysta.com
+                Adcubator | adcubator.com
               </span>
             </div>
           </div>
@@ -170,7 +170,7 @@ function DetailsContent() {
                       </svg>
                     )}
                     <span className="text-caption-2 font-medium leading-tight text-(--color-text-heading-06)">
-                      I&apos;m happy to have Vysta to follow up with me
+                      I&apos;m happy to have Adcubator to follow up with me
                     </span>
                   </button>
 
