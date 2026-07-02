@@ -10,7 +10,6 @@ const testimonials = [
     company: 'Adcubator',
     quote: "$300,000 in ad spend on 1 account — $1,700,000 in revenue back. Not even Black Friday. We were surf scaling intraday with over 100 campaigns running simultaneously.",
     avatar: '/avatars/founder.jpg',
-    href: 'https://twitter.com/Nate_Google_/status/1995837693440205228',
   },
   {
     name: 'Nate Schneider',
@@ -18,7 +17,6 @@ const testimonials = [
     company: 'Adcubator',
     quote: "From $6k/day in spend to $53k/day in spend in 18 days. Going from $500k/month in revenue from Google to over $3M/month. Almost all YouTube Ads.",
     avatar: '/avatars/founder.jpg',
-    href: 'https://twitter.com/Nate_Google_/status/1992823427191726296',
   },
   {
     name: 'Nate Schneider',
@@ -26,7 +24,6 @@ const testimonials = [
     company: 'Adcubator',
     quote: "$0 → $4,500,000/month on Google Ads in ONE MONTH. Generating 50%+ of all sales on terms as broad as 'christmas gifts'. No one else is doing this.",
     avatar: '/avatars/founder.jpg',
-    href: 'https://twitter.com/Nate_Google_/status/1991217779702460641',
   },
 ]
 
@@ -91,9 +88,7 @@ function SkeletonCard({ sweep = false }: { sweep?: boolean }) {
         </div>
         <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_0px_2px_1.5px_white]" />
       </div>
-      <div className="flex items-center justify-end px-3 py-2">
-        <Skel className="h-[25px] w-[84px] rounded-[10px]" />
-      </div>
+      <div className="py-1" />
     </div>
   )
 }
@@ -137,16 +132,7 @@ function TestiCard({ t, revealing = false }: { t: (typeof testimonials)[0]; reve
         </motion.p>
         <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_0px_2px_1.5px_white]" />
       </div>
-      <motion.div {...r(0.22)} className="flex items-center justify-end px-3 py-2">
-        <a
-          href={t.href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-(--color-blue-500) rounded-lg px-[14px] py-[6px] text-[10px] font-semibold leading-[1.2] text-(--color-white) whitespace-nowrap transition-opacity duration-150 hover:opacity-90"
-        >
-          View post
-        </a>
-      </motion.div>
+      <div className="py-1" />
     </div>
   )
 }
